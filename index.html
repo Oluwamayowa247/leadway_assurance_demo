@@ -11,16 +11,73 @@
     <title>Autogon Chatbot Demo</title>
 
     <!-- Link to an external stylesheet for styling the webpage -->
-    <link rel="stylesheet" href="https://cdn-chatbot.autogon.ai/style.css">
+  
+  <!--Kindly copy the provided CSS link and insert it within the <head> section of your HTML document-->
+    <link rel="stylesheet" href="https://cdn-chatbot.autogon.ai/style.css" />
 
-    <!-- Include the Autogon Chatbot script -->
+    <!--Please copy the provided script link and ensure its placement within the <body> section of your HTML document -->
     <script src="https://cdn-chatbot.autogon.ai/index.js" defer></script>
+    <script>
+        var CHAT_AGENT_ID = "d2cc1485-112e-455f-8708-a505720a21f6";
+    </script>
+    
 
-    <!-- Set the Chat Agent ID using a JavaScript variable -->
-    <script> var CHAT_AGENT_ID ="123849-d7ab-3421-2342-ce4e4fghtpeab" </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black; /* Set your preferred background color */
+            color: white;
+        }
+
+        #centerText {
+            font-family:'Poppins', sans-serif;  /* Set your preferred font family */
+            font-size: 24px; /* Set your preferred font size */
+            color: white; /* Set your preferred text color */
+            animation: fadeIn 5s ease; /* Add fade-in animation */
+            text-align: center; /* Align text to the center */
+            max-width: 400px; /* Set a maximum width for better readability */
+            margin: auto; /* Center the text both horizontally and vertically */
+            margin-bottom: 20px; /* Add margin to separate from the "Powered by Autogon 2024" text */
+        }
+
+        #poweredBy {
+            font-family:'Poppins', sans-serif;
+            text-align: center; /* Align text to the center */
+            margin-top: auto; /* Push the "Powered by Autogon 2024" text to the bottom */
+            margin-bottom: 20px; /* Set margin-bottom to create space between the text and the bottom of the page */
+        }
+        
+        #autogonIcon {
+            width: 30px; /* Set your preferred Autogon icon width */
+            height: 30px; /* Set your preferred Autogon icon height */
+            margin-top: 10px; /* Set the margin-top to create space between "Powered by Autogon 2024" and the icon */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- The body of the HTML document -->
     <!-- You can add content, structure, and other elements here -->
+    <div id="centerText">
+        Here you can ask anything about the Nigerian Startup Act. Click on the chat icon below to ask your question.
+    </div>
+
+    <div id="poweredBy">Powered by Autogon <img src="images/Autogonrmv.png" alt="Autogon Icon" id="autogonIcon"></div>
+    
 </body>
 </html>
