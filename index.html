@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="html">
+<html lang="en">
 <head>
     <!-- Set the character set to UTF-8 for proper text encoding -->
     <meta charset="UTF-8">
@@ -9,56 +9,56 @@
 
     <!-- Set the title of the webpage -->
     <title>Autogon Chatbot Demo</title>
-
-    <!-- Link to an external stylesheet for styling the webpage -->
   
-  <!--Kindly copy the provided CSS link and insert it within the <head> section of your HTML document-->
+    <!-- Link to external CSS for chatbot styling -->
     <link rel="stylesheet" href="https://cdn-chatbot.autogon.ai/style.css" />
 
-    <!--Please copy the provided script link and ensure its placement within the <body> section of your HTML document -->
-   
-
+    <!-- Link to Google Fonts for font styling -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <style>
-        *{
-          margin: 0;
-          padding:0;
-          box-sizing: border-box;
-         }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-         
-            background-color: black; /* Set your preferred background color */
-            color: white;
+            background-color: #f9f9f9; /* Light background for a clean look */
+            color: #333; /* Darker text for readability */
+            font-family: 'Poppins', sans-serif; /* Preferred font family */
         }
 
         #centerText {
-            font-family:'Poppins', sans-serif;  /* Set your preferred font family */
-            font-size: 24px; /* Set your preferred font size */
-            color: white; /* Set your preferred text color */
-            animation: fadeIn 5s ease; /* Add fade-in animation */
-            text-align: center; /* Align text to the center */
-            max-width: 400px; /* Set a maximum width for better readability */
+            font-size: 24px; /* Set font size */
+            text-align: center; /* Center text */
+            max-width: 600px; /* Set a maximum width for better readability */
             margin: auto; /* Center the text both horizontally and vertically */
-            margin-bottom: 20px; /* Add margin to separate from the "Powered by Autogon 2024" text */
+            padding: 20px; /* Add padding for space around text */
+            background-color: #ffffff; /* White background for text container */
+            border-radius: 8px; /* Rounded corners for a modern look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
         }
 
         #poweredBy {
-            font-family:'Poppins', sans-serif;
-            text-align: center; /* Align text to the center */
+            text-align: center; /* Center text */
             margin-top: auto; /* Push the "Powered by Autogon 2024" text to the bottom */
-            margin-bottom: 20px; /* Set margin-bottom to create space between the text and the bottom of the page */
+            margin-bottom: 20px; /* Add margin to separate from the bottom of the page */
+            font-size: 14px; /* Smaller font size for the footer text */
+            color: #555; /* Lighter color for less emphasis */
         }
-        
+
         #autogonIcon {
-            width: 30px; /* Set your preferred Autogon icon width */
-            height: 30px; /* Set your preferred Autogon icon height */
-            margin-top: 10px; /* Set the margin-top to create space between "Powered by Autogon 2024" and the icon */
+            width: 30px; /* Set icon width */
+            height: 30px; /* Set icon height */
+            margin-left: 8px; /* Create space between text and icon */
+            vertical-align: middle; /* Align icon with text */
         }
 
         @keyframes fadeIn {
@@ -72,18 +72,21 @@
     </style>
 </head>
 <body>
-    <script src="https://cdn-chatbot.autogon.ai/index.js" defer></script>
+    <!-- Load the chatbot script -->
+    <script src="https://2-0-0.d2ihyl18kf1dgr.amplifyapp.com/index.js" ></script>
     <script>
-        var CHAT_AGENT_ID = "d2cc1485-112e-455f-8708-a505720a21f6";
+      ChatBot.init( {
+        CHAT_AGENT_ID: '9de82534-72cf-4c02-837f-24653d072706',
+        brandColor: "#FFA500"
+      } );
     </script>
     
-    <!-- The body of the HTML document -->
-    <!-- You can add content, structure, and other elements here -->
+    <!-- Text for the chatbot -->
     <div id="centerText">
-        Here you can ask anything about the Nigerian Startup Act. Click on the chat icon below to ask your question.
+        Here you can ask anything about Leadway Assurance. <br><br> Click on the chat icon below to ask your question.
     </div>
 
-    <div id="poweredBy">Powered by Autogon <img src="images/Autogonrmv.png" alt="Autogon Icon" id="autogonIcon"></div>
-    
+    <!-- Footer section with Autogon credit -->
+    <div id="poweredBy">Powered by Autogon </div>
 </body>
 </html>
